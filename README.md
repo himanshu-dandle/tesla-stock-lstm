@@ -37,7 +37,7 @@ The model's performance was evaluated using the following metrics:
 
 ### Example Plot: Actual vs Predicted Stock Prices
 
-![Stock Price Prediction Plot](results/stock_prediction.png)
+results/actual_vs_predicted.png
 
 ## Instructions to Run
 

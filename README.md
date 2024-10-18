@@ -19,7 +19,8 @@ We chose LSTM because it can retain information over long sequences, making it s
 
 ## Dataset
 
-The dataset was sourced from [Yahoo Finance](https://finance.yahoo.com/), containing historical data for Tesla stocks.
+The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/varpit94/tesla-stock-data-updated-till-28jun2021), containing historical stock data for Tesla. It includes features such as the opening price, closing price, high, low, and trading volume from Tesla’s stock history up to June 28, 2021.
+
 
 ## Model Architecture
 

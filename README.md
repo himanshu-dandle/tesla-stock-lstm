@@ -18,8 +18,22 @@ We chose LSTM because it can retain information over long sequences, making it s
 5. **Visualization**: Comparing the predicted stock prices with the actual stock prices to evaluate model performance.
 
 ## Dataset
-
 The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/varpit94/tesla-stock-data-updated-till-28jun2021), containing historical stock data for Tesla. It includes features such as the opening price, closing price, high, low, and trading volume from Tesla’s stock history up to June 28, 2021.
+The data includes key stock market features that are essential for building and training the LSTM model for time-series prediction. The dataset provides daily trading information, which can be leveraged for predicting future stock prices.
+
+Features in the Dataset:
+Date: The specific trading day.
+Open: The price at which Tesla's stock opened at the beginning of the trading session.
+High: The highest price of Tesla’s stock during the trading session.
+Low: The lowest price of Tesla’s stock during the trading session.
+Close: The price at which Tesla’s stock closed at the end of the trading session. This is the primary feature used for stock price prediction.
+Adj Close: The adjusted closing price that accounts for dividends, stock splits, and other corporate actions.
+Volume: The total number of Tesla shares traded during the session.
+Data Range:
+The dataset contains historical data for Tesla from July 1, 2010, to June 28, 2021.
+Data Source:
+Kaggle - Tesla Stock Data
+
 
 
 ## Model Architecture

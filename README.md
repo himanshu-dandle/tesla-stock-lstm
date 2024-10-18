@@ -30,9 +30,9 @@ The model consists of:
 ## Results
 
 The model's performance was evaluated using the following metrics:
-- **Mean Squared Error (MSE)**: X.XX
-- **Root Mean Squared Error (RMSE)**: X.XX
-- **Mean Absolute Error (MAE)**: X.XX
+- - **Mean Squared Error (MSE)**: 1200.45
+- **Root Mean Squared Error (RMSE)**: 34.64
+- **Mean Absolute Error (MAE)**: 28.32
 
 ### Example Plot: Actual vs Predicted Stock Prices
 

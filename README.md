@@ -18,23 +18,13 @@ We chose LSTM because it can retain information over long sequences, making it s
 5. **Visualization**: Comparing the predicted stock prices with the actual stock prices to evaluate model performance.
 
 ## Dataset
-The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/varpit94/tesla-stock-data-updated-till-28jun2021), containing historical stock data for Tesla. It includes features such as the opening price, closing price, high, low, and trading volume from Tesla’s stock history up to June 28, 2021.
-The data includes key stock market features that are essential for building and training the LSTM model for time-series prediction. The dataset provides daily trading information, which can be leveraged for predicting future stock prices.
-
-Features in the Dataset:
-Date: The specific trading day.
-Open: The price at which Tesla's stock opened at the beginning of the trading session.
-High: The highest price of Tesla’s stock during the trading session.
-Low: The lowest price of Tesla’s stock during the trading session.
-Close: The price at which Tesla’s stock closed at the end of the trading session. This is the primary feature used for stock price prediction.
-Adj Close: The adjusted closing price that accounts for dividends, stock splits, and other corporate actions.
-Volume: The total number of Tesla shares traded during the session.
-Data Range:
-The dataset contains historical data for Tesla from July 1, 2010, to June 28, 2021.
-Data Source:
-Kaggle - Tesla Stock Data
-
-
+The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/varpit94/tesla-stock-data-updated-till-28jun2021) and contains historical stock data for Tesla, including:
+- **Date**: The specific trading day.
+- **Open**: Stock opening price.
+- **High**: Highest price during the trading day.
+- **Low**: Lowest price during the trading day.
+- **Close**: Stock closing price, used for predictions.
+- **Volume**: Number of shares traded.
 
 ## Model Architecture
 
@@ -44,14 +34,17 @@ The model consists of:
 
 ## Results
 
-The model's performance was evaluated using the following metrics:
-- **Mean Squared Error (MSE)**: 3745.63
-- **Root Mean Squared Error (RMSE)**:  61.20
-- **Mean Absolute Error (MAE)**: 44.70
+   The model's performance was evaluated using the following metrics:
+   ## Model Performance
+   - **Mean Squared Error (MSE)**: 2210.75
+   - **Root Mean Squared Error (RMSE)**: 47.02
+   - **Mean Absolute Error (MAE)**: 33.17
+
 
 ### Example Plot: Actual vs Predicted Stock Prices
 
 ![Actual vs Predicted Stock Prices](results/actual_vs_predicted.png)
+![Training vs Validation Loss](results/training_validation_loss.png)
 
 ## Instructions to Run
 
@@ -80,17 +73,8 @@ To get this project running on your local machine, follow these steps:
    The Actual vs Predicted Stock Prices plot and Training/Validation Loss plot will be generated and saved in the results/ folder.
    The model’s performance metrics, such as Mean Squared Error (MSE) and Root Mean Squared Error (RMSE), will also be displayed in the notebook.
 
-##Future Enhancements
-   There are several areas in which this project can be expanded or improved:
-   
-      1) Hyperparameter Tuning: Further optimization of the LSTM model's hyperparameters (e.g., number of layers, dropout rates, learning rates,
-         and number of epochs) could improve model accuracy.
-   
-      2) Feature Engineering: Additional features like moving averages, Bollinger Bands, or other technical indicators could be incorporated to improve the       
-         predictive power of the model.
-   
-      3) Incorporating External Factors: Including external datasets, such as macroeconomic indicators (e.g., interest rates, inflation rates) or news sentiment             analysis, could enhance the model’s ability to predict stock price movements.
-   
-      4) Exploring Alternative Models: Trying different deep learning models such as GRUs (Gated Recurrent Units) or Transformers could yield better performance on          the time series data.
-   
-      5) Model Deployment: The trained model could be deployed as an API using Flask or FastAPI, enabling real-time stock price prediction.
+## Future Enhancements
+1. **Hyperparameter Tuning**: Further optimize LSTM hyperparameters (e.g., layers, dropout, learning rate).
+2. **Feature Engineering**: Add more technical indicators like moving averages or Bollinger Bands to improve model accuracy.
+3. **External Factors**: Incorporate other data sources (e.g., news sentiment analysis or macroeconomic indicators).
+4. **Deploying the Model**: Consider deploying the model as an API using Flask or FastAPI.

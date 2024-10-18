@@ -4,7 +4,11 @@ This project demonstrates how to use Long Short-Term Memory (LSTM) networks to p
 
 ## Project Overview
 
-The aim of this project is to predict the closing price of Tesla stocks using historical data fetched from Yahoo Finance. We use a deep learning-based LSTM model to capture temporal dependencies in the stock prices.
+This project focuses on predicting Tesla's stock prices using historical stock data and a Long Short-Term Memory (LSTM) neural network. LSTMs are highly effective for time-series forecasting tasks as they can capture temporal dependencies and patterns in sequential data, making them ideal for stock price prediction.
+
+The main goal of this project is to predict Tesla’s stock closing prices based on past prices, allowing for better insight into future price movements. Accurate stock price prediction can be beneficial for making informed investment decisions, analyzing market trends, and managing risk.
+
+We chose LSTM because it can retain information over long sequences, making it suitable for modeling stock market data, which is known for its volatility and time-dependent characteristics.
 
 ### Steps:
 1. **Data Collection**: Using `yfinance` to collect Tesla stock price data.

@@ -31,13 +31,13 @@ The model consists of:
 ## Results
 
 The model's performance was evaluated using the following metrics:
-- - **Mean Squared Error (MSE)**: 3745.63
+- **Mean Squared Error (MSE)**: 3745.63
 - **Root Mean Squared Error (RMSE)**:  61.20
 - **Mean Absolute Error (MAE)**: 44.70
 
 ### Example Plot: Actual vs Predicted Stock Prices
 
-results/actual_vs_predicted.png
+![Actual vs Predicted Stock Prices](results/actual_vs_predicted.png)
 
 ## Instructions to Run
 

@@ -66,3 +66,17 @@ To get this project running on your local machine, follow these steps:
    The Actual vs Predicted Stock Prices plot and Training/Validation Loss plot will be generated and saved in the results/ folder.
    The model’s performance metrics, such as Mean Squared Error (MSE) and Root Mean Squared Error (RMSE), will also be displayed in the notebook.
 
+##Future Enhancements
+   There are several areas in which this project can be expanded or improved:
+   
+      1) Hyperparameter Tuning: Further optimization of the LSTM model's hyperparameters (e.g., number of layers, dropout rates, learning rates,
+         and number of epochs) could improve model accuracy.
+   
+      2) Feature Engineering: Additional features like moving averages, Bollinger Bands, or other technical indicators could be incorporated to improve the       
+         predictive power of the model.
+   
+      3) Incorporating External Factors: Including external datasets, such as macroeconomic indicators (e.g., interest rates, inflation rates) or news sentiment             analysis, could enhance the model’s ability to predict stock price movements.
+   
+      4) Exploring Alternative Models: Trying different deep learning models such as GRUs (Gated Recurrent Units) or Transformers could yield better performance on          the time series data.
+   
+      5) Model Deployment: The trained model could be deployed as an API using Flask or FastAPI, enabling real-time stock price prediction.

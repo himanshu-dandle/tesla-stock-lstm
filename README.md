@@ -38,9 +38,30 @@ The model's performance was evaluated using the following metrics:
 
 ![Stock Price Prediction Plot](results/stock_prediction.png)
 
-## Setup
+## Instructions to Run
 
-To run this project locally:
-1. Clone the repository:
+To get this project running on your local machine, follow these steps:
+
+### 1. Clone the Repository
+   First, clone this repository to your local machine using Git:
+
    ```bash
    git clone https://github.com/himanshu-dandle/tesla-stock-lstm.git
+   cd tesla-stock-lstm
+
+### Set Up a Virtual Environment
+   conda create --name lstm_env python=3.8
+   conda activate lstm_env
+
+### Install Dependencies
+   pip install -r requirements.txt
+
+###Run the Jupyter Notebook
+   jupyter notebook
+
+   Navigate to the notebooks/ directory in Jupyter and open the tesla_lstm.ipynb file. Run the notebook cells sequentially to preprocess data, train the model, and    visualize results.
+
+##Viewing Results
+   The Actual vs Predicted Stock Prices plot and Training/Validation Loss plot will be generated and saved in the results/ folder.
+   The model’s performance metrics, such as Mean Squared Error (MSE) and Root Mean Squared Error (RMSE), will also be displayed in the notebook.
+

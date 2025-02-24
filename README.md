@@ -1,5 +1,11 @@
 # Tesla Stock Price Prediction using LSTM
 
+Live Demo
+
+Check out the live demo of the Tesla Stock Price Prediction App:
+🔗 Live Demo on Streamlit https://amazoncustomersentimentanalysis-tmuqmkhxqcbhn8fizsin9e.streamlit.app/
+ 
+
 This project demonstrates how to use Long Short-Term Memory (LSTM) networks to predict Tesla stock prices based on historical stock data. LSTMs are powerful for time-series forecasting, making them highly effective for stock price prediction.
 
 ## Project Overview

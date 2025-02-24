@@ -4,11 +4,27 @@ This project demonstrates how to use Long Short-Term Memory (LSTM) networks to p
 
 ## Project Overview
 
-This project focuses on predicting Tesla's stock prices using historical stock data and a Long Short-Term Memory (LSTM) neural network. LSTMs are highly effective for time-series forecasting tasks as they can capture temporal dependencies and patterns in sequential data, making them ideal for stock price prediction.
+Stock price prediction is a challenging task due to the volatile nature of financial markets. This project leverages deep learning techniques to predict Tesla’s stock closing prices using historical stock data.
 
-The main goal of this project is to predict Tesla’s stock closing prices based on past prices, allowing for better insight into future price movements. Accurate stock price prediction can be beneficial for making informed investment decisions, analyzing market trends, and managing risk.
+✅ Why LSTM?
 
-We chose LSTM because it can retain information over long sequences, making it suitable for modeling stock market data, which is known for its volatility and time-dependent characteristics.
+LSTM networks are designed to handle sequential data and remember long-term dependencies.
+
+They can effectively capture trends and patterns in stock price movements.
+
+More accurate than traditional regression models for time-series forecasting.
+
+
+### Project Structure
+
+📦 tesla-stock-lstm
+├── 📁 data                  # Dataset & processed data
+├── 📁 results               # Model & prediction results
+├── 📁 notebooks             # Jupyter Notebooks for each stage
+├── app.py                   # Streamlit App for predictions
+├── requirements.txt         # Required dependencies
+├── README.md                # Project Documentation
+
 
 ### Steps:
 1. **Data Collection**: Using `yfinance` to collect Tesla stock price data.
@@ -29,17 +45,19 @@ The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/varpit94/t
 ## Model Architecture
 
 The model consists of:
-- Two LSTM layers with 128 and 64 units, followed by Dropout layers to prevent overfitting.
-- The final output layer is a dense layer that predicts the closing price.
+
+Two LSTM layers with 50 units, followed by Dropout layers to prevent overfitting.
+
+The final output layer is a dense layer that predicts the closing price.
+
 
 ## Results
 
    The model's performance was evaluated using the following metrics:
    ## Model Performance
-   - **Mean Squared Error (MSE)**: 2210.75
-   - **Root Mean Squared Error (RMSE)**: 47.02
-   - **Mean Absolute Error (MAE)**: 33.17
-
+   Mean Squared Error (MSE): 3753.8690004458163
+	Root Mean Squared Error (RMSE): 61.26882568195523
+	Mean Absolute Error (MAE): 44.11808127674939
 
 ### Example Plot: Actual vs Predicted Stock Prices
 
@@ -66,8 +84,13 @@ To get this project running on your local machine, follow these steps:
 
 ###Run the Jupyter Notebook
    jupyter notebook
+   
+   Navigate to the notebooks/ directory in Jupyter and open the tesla_lstm.ipynb file. Run the notebook cells sequentially to preprocess data, train the model, and    visualize results.	
+   
+### Run the Streamlit App
+	streamlit run app.py
 
-   Navigate to the notebooks/ directory in Jupyter and open the tesla_lstm.ipynb file. Run the notebook cells sequentially to preprocess data, train the model, and    visualize results.
+   
 
 ##Viewing Results
    The Actual vs Predicted Stock Prices plot and Training/Validation Loss plot will be generated and saved in the results/ folder.

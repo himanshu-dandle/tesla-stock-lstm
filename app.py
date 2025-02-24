@@ -64,7 +64,9 @@ if st.button("Predict Stock Price"):
 st.subheader("📊 Actual vs Predicted Stock Prices")
 if os.path.exists(plot_path):
    ## st.image(plot_path, caption="Actual vs Predicted Prices", use_column_width=True
-    st.image(plot_path, caption="Actual vs Predicted Prices", use_container_width=True)
+   ## st.image(plot_path, caption="Actual vs Predicted Prices", use_container_width=True)
+    st.image(plot_path, caption="Actual vs Predicted Prices")
+
 
 else:
     st.warning("⚠️ Prediction plot not found. Please run model evaluation.")
